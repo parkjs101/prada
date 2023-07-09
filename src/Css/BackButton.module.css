@@ -1,0 +1,9 @@
+.BackButton{
+	font-size: small;
+	cursor: pointer;
+	border: none;
+	background-color: white;
+}
+.BackButton:hover{
+	background-color: lightgray;
+}

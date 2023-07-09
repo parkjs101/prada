@@ -1,0 +1,8 @@
+.section{
+	border-bottom: 2px solid black;
+	border-collapse: collapse;
+	display: grid;
+	width: 100vw;
+	height: 90vh;
+	background-color: yellow;
+}
