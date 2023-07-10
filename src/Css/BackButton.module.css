@@ -1,9 +1,9 @@
-.BackButton{
+.backButton{
 	font-size: small;
 	cursor: pointer;
 	border: none;
 	background-color: white;
 }
-.BackButton:hover{
+.backButton:hover{
 	background-color: lightgray;
 }

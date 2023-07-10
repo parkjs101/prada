@@ -1,9 +1,9 @@
-import React from 'react'
 import styles from '../Css/Section.module.css'
 
-function Section() {
+function Section({children}) {
 	return (
 		<div className={styles.section}>
+			{children}
 		</div>
 	)
 }

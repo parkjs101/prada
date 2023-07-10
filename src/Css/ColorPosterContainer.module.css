@@ -1,0 +1,9 @@
+.posterContainer{
+  position: absolute;
+  top: 5vmin;
+  left: 25vw;
+  width: 70vw;
+  height: 70h;
+  display: flex;
+  flex-wrap: wrap;
+}

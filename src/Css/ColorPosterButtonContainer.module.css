@@ -1,0 +1,9 @@
+.buttonContainer{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 15vmin;
+  right: 25vmin;
+  width: 5vw;
+  display: flex;
+}
