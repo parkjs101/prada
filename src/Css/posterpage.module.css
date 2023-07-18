@@ -1,0 +1,12 @@
+.posterpage{
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  flex-shrink: 0;
+}
+.arrowcontainer{
+  position: relative;  
+  display: flex;
+  width: 100%;
+  top: 50%;
+}
