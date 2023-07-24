@@ -5,9 +5,6 @@ function ArchivePage() {
   return (
     <div className={styles.archivepage}>
       archive page
-      <div className={styles.arrowcontainer}>
-        <RightArrow></RightArrow>
-      </div>
     </div>
   )
 }

@@ -1,0 +1,10 @@
+.main{
+  display: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  height: 100%;
+  margin-right: 10%;
+  overflow-x: hidden;
+  border: solid 1px red;
+}

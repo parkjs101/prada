@@ -1,7 +1,8 @@
 .arrow{
   position: absolute;
+  top: 50%;
+  left: 3%;
   width: 56px;
   height: 56px;
   cursor: pointer;
-  right: 3%;
 }

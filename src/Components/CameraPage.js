@@ -1,15 +1,24 @@
 import styles from '../Css/camerapage.module.css'
-import LeftArrow from './LeftArrow'
+
+import Title from "./Title"
+import SubTitlecamera from './SubTitlecamera'
+import ContentsContainer from './ContentsContainer'
 import RightArrow from './RightArrow'
+import LeftArrow from './LeftArrow'
+import ClickButton from './ClickButton'
+import CameraIcon from './CameraIcon'
 
 function CameraPage() {
   return (
     <div className={styles.camerapage}>
-      camera page
-        <div className={styles.arrowcontainer}>
-        <RightArrow></RightArrow>
-        <LeftArrow></LeftArrow>
-        </div>
+      <Title />
+      <SubTitlecamera />
+      <ContentsContainer>
+        <LeftArrow />
+        <CameraIcon />
+        <RightArrow />
+      </ContentsContainer>
+      <ClickButton />
     </div>
   )
 }

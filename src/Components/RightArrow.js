@@ -1,4 +1,4 @@
-import { ReactComponent as Arrow } from "../assets/rightarrow.svg"
+import {ReactComponent as Arrow} from '../assets/rightarrow.svg'
 import styles from '../Css/rightarrow.module.css'
 
 function RightArrow() {

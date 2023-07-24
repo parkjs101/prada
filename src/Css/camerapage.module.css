@@ -1,12 +1,9 @@
 .camerapage{
   position: relative;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
   width: 100vw;
   height: 90vh;
   flex-shrink: 0;
-}
-.arrowcontainer{
-  position: relative;  
-  display: flex;
-  width: 100%;
-  top: 50%;
 }
