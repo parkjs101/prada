@@ -1,11 +1,11 @@
 import styles from '../Css/frame.module.css'
 
-import { ReactComponent as Poster7 } from '../assets/poster7.svg'
+import Poster from './Poster'
 
 function Frame() {
   return (
     <div className={styles.main}>
-      <Poster7 />
+      <Poster num={0}/>
     </div>
   )
 }

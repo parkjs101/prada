@@ -2,9 +2,10 @@
   display: relative;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   width: 80%;
   height: 100%;
   margin-right: 10%;
-  overflow-x: hidden;
+  overflow-x: scroll;
   border: solid 1px red;
 }

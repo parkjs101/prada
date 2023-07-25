@@ -1,10 +1,21 @@
 import styles from '../Css/archivepage.module.css'
-import RightArrow from './RightArrow'
+import Title from './Title'
+import SubTitlevisitors from './SubTitlevisitors'
+import LeftArrow from './LeftArrow'
+import ContentsContainer from './ContentsContainer'
+import PhotoArchive from './PhotoArchive'
+import ScrollBox from "./ScrollBox"
 
 function ArchivePage() {
   return (
     <div className={styles.archivepage}>
-      archive page
+      <Title />
+      <SubTitlevisitors />
+      <LeftArrow />
+      <ContentsContainer>
+        <PhotoArchive />
+      </ContentsContainer>
+      <ScrollBox />
     </div>
   )
 }

@@ -3,9 +3,9 @@ import styles from '../Css/leftarrow.module.css'
 
 function LeftArrow() {
   return (
-    <div className={styles.arrow}>
-      <Arrow></Arrow>
-    </div>
+      <button className={styles.arrow}>
+        <Arrow></Arrow>
+      </button>
   )
 }
 

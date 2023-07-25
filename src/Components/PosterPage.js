@@ -14,8 +14,8 @@ function PosterPage() {
       <SubTitlemovie />
       <ContentsContainer>
         <Frame></Frame>
-        <RightArrow />
       </ContentsContainer>
+      <RightArrow />
       <ScrollBox />
     </div>
   )
