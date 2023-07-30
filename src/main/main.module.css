@@ -1,0 +1,8 @@
+.main{
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.main::-webkit-scrollbar{
+  display: none;
+}

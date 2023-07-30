@@ -7,7 +7,8 @@ import Frame from "./Frame"
 
 import styles from '../Css/posterpage.module.css'
 
-function PosterPage() {
+function PosterPage(props) {
+
   return (
     <div className={styles.posterpage}>
       <Title />
@@ -15,7 +16,7 @@ function PosterPage() {
       <ContentsContainer>
         <Frame></Frame>
       </ContentsContainer>
-      <RightArrow />
+      <RightArrow getNewValue={props.getNewV}/>
       <ScrollBox />
     </div>
   )

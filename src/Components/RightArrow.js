@@ -1,13 +1,15 @@
 import {ReactComponent as Arrow} from '../assets/rightarrow.svg'
 import styles from '../Css/rightarrow.module.css'
 
-function RightArrow() {
-  
-  
+function RightArrow(props) {
+  const sendNewValue = () => {
+    return props.getNewValue()
+  }
+
   return (
-    <button className={styles.arrow}>
+    <div className={styles.arrow} onClick={sendNewValue}>
       <Arrow></Arrow>
-    </button>
+    </div>
   )
 }
 
