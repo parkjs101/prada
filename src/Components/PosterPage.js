@@ -16,7 +16,7 @@ function PosterPage(props) {
       <ContentsContainer>
         <Frame></Frame>
       </ContentsContainer>
-      <RightArrow getNewValue={props.getNewV}/>
+      <RightArrow clickRightArrow={props.clickRightArrow}/>
       <ScrollBox />
     </div>
   )

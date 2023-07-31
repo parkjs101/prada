@@ -4,7 +4,7 @@ import styles from '../Css/subtitle.module.css'
 
 function SubTitlemovie() {
   return (
-    <div className={styles.subtitle}>
+    <div className={styles.subtitle2}>
       <Subtitle />
     </div>
   )

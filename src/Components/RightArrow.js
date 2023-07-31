@@ -3,7 +3,7 @@ import styles from '../Css/rightarrow.module.css'
 
 function RightArrow(props) {
   const sendNewValue = () => {
-    return props.getNewValue()
+    return props.clickRightArrow()
   }
 
   return (

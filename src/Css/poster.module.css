@@ -1,4 +1,13 @@
 .main{
-  display: block;
-  margin: 10px
+  display: flex;
+  position: relative;
+  top: 10%;
+  padding: 0;
+  width: 23.82%;
+  height: 90%;
+  margin-left: 50px;
+  z-index: 0;
+}
+.main:hover{
+  top: 1%;
 }

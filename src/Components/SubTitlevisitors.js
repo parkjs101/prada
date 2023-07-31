@@ -3,7 +3,7 @@ import styles from '../Css/subtitle.module.css'
 
 function SubTitlevisitors() {
   return (
-    <div className={styles.subtitle}>
+    <div className={styles.subtitle1}>
       <SubTitle />
     </div>
   )

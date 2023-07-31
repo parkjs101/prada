@@ -7,15 +7,21 @@ import LeftArrow from './LeftArrow'
 import ClickButton from './ClickButton'
 import CameraIcon from './CameraIcon'
 
-function CameraPage() {
+function CameraPage(props) {
+  
+  const popupOpen = () => {
+    console.log(1)
+    window.open("/Camera", "PopupWin", "width=500,height=600");
+  }
+  
   return (
     <div className={styles.camerapage}>
       <Title />
       <SubTitlecamera />
-      <LeftArrow />
+      <LeftArrow clickLeftArrow={props.clickLeftArrow}/>
       <CameraIcon />
-      <RightArrow />
-      <ClickButton />
+      <RightArrow clickRightArrow={props.clickRightArrow}/>
+      <ClickButton popup={popupOpen}/>
     </div>
   )
 }

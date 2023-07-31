@@ -1,6 +1,5 @@
 .main{
   display: flex;
   justify-content: center;
-  margin: 7%;
-  cursor: pointer;
+  margin: 9%;
 }

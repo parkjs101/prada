@@ -1,6 +1,12 @@
-.subtitle{
+.subtitle1{
   position: relative;
   margin: 3%;
+  display: flex;
+  justify-content: center;
+}
+.subtitle2{
+  position: relative;
+  margin-top: 3%;
   display: flex;
   justify-content: center;
 }

@@ -4,7 +4,7 @@ import styles from '../Css/subtitle.module.css'
 
 function SubTitlecamera() {
   return (
-    <div className={styles.subtitle}>
+    <div className={styles.subtitle1}>
       <SubTitleCamera />
     </div>
   )
