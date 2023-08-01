@@ -1,12 +1,16 @@
 .main{
+  border: solid 1px red;
+  transform: rotate(90deg);
   position: relative;
-  bottom: 0;
   display: flex;
-  flex-direction: row-reverse;
-  width: 80%;
-  height: 100%;
-  overflow-x: scroll;
-  overflow-y: visible;
+  flex-direction: column;
+  justify-content:space-between;
+  margin-top: -20%;
+  margin-left: 20%;
+  padding: 0;
+  width: 34%;
+  height: 260%;
+  overflow-y: scroll;
 }
 .main::-webkit-scrollbar{
   display: none;
