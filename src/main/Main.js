@@ -14,7 +14,6 @@ function Main() {
       left:divRef.current.scrollLeft+divRef.current.offsetWidth,
       behavior: "smooth",
     });
-    console.log(1)
   }
   
   const clickLeftArrow = () => {
@@ -23,7 +22,6 @@ function Main() {
       left:divRef.current.scrollLeft-divRef.current.offsetWidth,
       behavior: "smooth",
     });
-    console.log(2)
   }
 
   return (

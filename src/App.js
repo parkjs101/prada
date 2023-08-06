@@ -1,7 +1,7 @@
 import './App.css';
 import Main from '../src/main/Main'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Camera from './Components/camera/Camera';
+import Camera from './Components/Camera';
 
 function App() {
 
