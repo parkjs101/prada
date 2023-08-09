@@ -21,7 +21,7 @@ function PhotoArchive() {
   return (
     <div className={styles.main}>
       {images.map((image) => {
-        return <img src={image.code} />
+        return <img src={image.code} className={styles.image} />
       })}
     </div>
   )

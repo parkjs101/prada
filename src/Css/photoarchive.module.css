@@ -2,10 +2,12 @@
   display: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 90%;
   height: 100%;
   margin-left: 10%;
   overflow-x: scroll;
   border: solid 1px red;
+}
+.image{
+  margin-left: 1%;
 }
