@@ -1,8 +1,7 @@
-import React, {useCallback, useRef} from 'react'
+import React, {useCallback, useState, useRef} from 'react'
 import Webcam from 'react-webcam';
 import { db } from "./firebase"
 import { collection, addDoc } from "firebase/firestore"
-import styles from '../Css/camera.module.css'
 
 
 function Camera() {
@@ -41,17 +40,14 @@ function Camera() {
 
   return (
     <div>
-      <div className={styles.main}>
-        <Webcam
-          audio={false}
-          width={300}
-          height={400}
-          ref={webcamRef}
-          screenshotFormat="image/jpeg"
-          videoConstraints={videoConstraints}
-          mirrored={true}
-          />
-      </div>
+      <Webcam
+        audio={false}
+        height={720}
+        ref={webcamRef}
+        screenshotFormat="image/jpeg"
+        width={1280}
+        videoConstraints={videoConstraints}
+      />
       <button onClick={capture}>Capture photo</button>
       <button onClick={save}>Save photo</button>
     </div>
