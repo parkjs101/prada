@@ -1,4 +1,4 @@
-import React, {useCallback, useState, useRef} from 'react'
+import React, {useCallback, useRef} from 'react'
 import Webcam from 'react-webcam';
 import { db } from "./firebase"
 import { collection, addDoc } from "firebase/firestore"
@@ -47,6 +47,7 @@ function Camera() {
         screenshotFormat="image/jpeg"
         width={1280}
         videoConstraints={videoConstraints}
+        mirrored={true}
       />
       <button onClick={capture}>Capture photo</button>
       <button onClick={save}>Save photo</button>
