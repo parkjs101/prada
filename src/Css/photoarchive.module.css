@@ -1,12 +1,14 @@
 .main{
   display: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 90%;
   height: 100%;
   margin-left: 10%;
   overflow-x: scroll;
-  border: solid 1px red;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 .image{
   margin-left: 1%;

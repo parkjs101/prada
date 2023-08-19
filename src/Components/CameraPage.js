@@ -10,7 +10,7 @@ import CameraIcon from './CameraIcon'
 function CameraPage(props) {
   
   const popupOpen = () => {
-    window.open("/Camera", "PopupWin", "width=500,height=600");
+    window.open("/Camera", "PopupWin", "width=1200,height=800,top=200,left=400");
   }
   
   return (

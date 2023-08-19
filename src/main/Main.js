@@ -5,8 +5,15 @@ import ArchivePage from "../Components/ArchivePage"
 import {useRef} from "react"
 import styles from '../main/main.module.css'
 
-function Main() {
+function Main(props) {
   const divRef = useRef()
+
+  const reload = () => {
+    console.log(props.sendReload())
+    if (props.sendReload()){
+      window.location.replace("/")
+    }
+  }
 
   const clickRightArrow = () => {
     divRef.current.scrollTo({
