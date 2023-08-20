@@ -1,10 +1,11 @@
 import styles from '../Css/frame.module.css'
-
 import Poster from './Poster'
+import { useHorizontalScroll } from "./useSideScroll";
 
 function Frame() {
+  const scrollRef = useHorizontalScroll();
   return (
-    <div className={styles.main}>
+    <div className={styles.main} ref={scrollRef}>
       <Poster num={0}/>
       <Poster num={1}/>
       <Poster num={2}/>

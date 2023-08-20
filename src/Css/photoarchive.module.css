@@ -1,10 +1,11 @@
 .main{
   display: relative;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   width: 90%;
-  height: 100%;
-  margin-left: 10%;
+  height: 83%;
+  margin-top: 5%;
+  margin-left: 12%;
   overflow-x: scroll;
 }
 ::-webkit-scrollbar{

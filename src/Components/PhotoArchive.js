@@ -10,7 +10,7 @@ function PhotoArchive() {
 
   useEffect(() =>{
     const getImages = async () => {
-      const data = await getDocs(query(imagesCollectionRef, orderBy("timestamp")));
+      const data = await getDocs(query(imagesCollectionRef, orderBy("timestamp", "desc")));
       setImages(data.docs.map(( doc ) => ({...doc.data(), id: doc.id}) ))
     }
     getImages()

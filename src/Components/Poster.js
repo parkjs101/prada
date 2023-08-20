@@ -22,7 +22,7 @@ function Poster(props) {
   
   return (
     <div className={styles.main}>
-      <img className={styles.image} src={posters[props.num].v} alt='img'/>
+      <img src={posters[props.num].v} alt='img'/>
     </div>
   )
 }
