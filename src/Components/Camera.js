@@ -28,7 +28,7 @@ function Camera() {
     () => {
       setIsStarted(false)
       console.log("저장되었습니다.")
-      alert("저장되었습니다")
+      alert("앨범에 저장되었습니다")
       console.log(imageRef.current)
       createImage();
     },

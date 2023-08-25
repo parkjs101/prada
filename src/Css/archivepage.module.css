@@ -7,3 +7,10 @@
   height: 100vh;
   flex-shrink: 0;
 }
+.archivepagebutton{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;;
+}

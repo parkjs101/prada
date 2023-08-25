@@ -2,18 +2,12 @@ import PosterPage from "../Components/PosterPage"
 import CameraPage from "../Components/CameraPage"
 import ArchivePage from "../Components/ArchivePage"
 
-import {useRef} from "react"
+import {useRef, useEffect } from "react"
+
 import styles from '../main/main.module.css'
 
-function Main(props) {
+function Main() {
   const divRef = useRef()
-
-  const reload = () => {
-    console.log(props.sendReload())
-    if (props.sendReload()){
-      window.location.replace("/")
-    }
-  }
 
   const clickRightArrow = () => {
     divRef.current.scrollTo({
@@ -30,7 +24,7 @@ function Main(props) {
       behavior: "smooth",
     });
   }
-
+  
   return (
     <div className={styles.main} ref={divRef}>
       <PosterPage clickRightArrow={clickRightArrow}></PosterPage>

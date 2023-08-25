@@ -3,11 +3,17 @@ import SubTitlevisitors from './SubTitlevisitors'
 import LeftArrow from './LeftArrow'
 import ContentsContainer from './ContentsContainer'
 import PhotoArchive from './PhotoArchive'
-import ScrollBox from "./ScrollBox"
+import ArchivePageScrollBox from './ArchivePageScrollBox'
+import RefreshButton from './RefreshButton'
 
 import styles from '../Css/archivepage.module.css'
 
 function ArchivePage(props) {
+
+  const refresh = () => {
+    window.location.replace("/");
+ }
+
   return (
     <div className={styles.archivepage}>
       <Title />
@@ -16,7 +22,10 @@ function ArchivePage(props) {
         <PhotoArchive />
       </ContentsContainer>
       <LeftArrow clickLeftArrow={props.clickLeftArrow}/>
-      <ScrollBox />
+      <div className={styles.archivepagebutton}>
+        <RefreshButton refresh={refresh} />
+        <ArchivePageScrollBox />
+      </div>
     </div>
   )
 }

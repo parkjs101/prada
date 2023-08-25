@@ -18,7 +18,6 @@ function PhotoArchive() {
 
   const scrollRef = useHorizontalScroll();
 
-
   return (
     <div className={styles.main} ref={scrollRef}>
       {images.map((image) => {

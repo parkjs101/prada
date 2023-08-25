@@ -1,7 +1,6 @@
 import './App.css';
 import Main from '../src/main/Main'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
 import Camera from './Components/Camera';
 
 function App() {
