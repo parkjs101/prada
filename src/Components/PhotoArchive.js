@@ -4,7 +4,7 @@ import { db } from "./firebase"
 import { collection, getDocs, orderBy, query } from "firebase/firestore"
 import { useHorizontalScroll } from "./useSideScroll";
 
-function PhotoArchive() {
+function PhotoArchive({ refreshKey}) {
   const [images, setImages] = useState([])
   const imagesCollectionRef = collection(db, "images")
 
@@ -14,7 +14,7 @@ function PhotoArchive() {
       setImages(data.docs.map(( doc ) => ({...doc.data(), id: doc.id}) ))
     }
     getImages()
-  }, [])
+  }, [refreshKey])
 
   const scrollRef = useHorizontalScroll();
 
