@@ -16,6 +16,7 @@ function Camera() {
   };
   const imageRef = useRef([""])
   const createImage = async () => {
+    // images db에 저장
     addDoc(imagesCollectionRef, {code: imageRef.current, timestamp: new Date()})
   }
   const webcamRef = useRef(null);
@@ -59,6 +60,7 @@ function Camera() {
 
   const onClosePopup = () => {
     window.close();
+    window.opener.location.reload();
   };
 
   return (
