@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useRef, useState} from 'react'
+import React, {useCallback, useRef, useState} from 'react'
 import Webcam from 'react-webcam';
 import { db } from "./firebase"
 import { collection, addDoc } from "firebase/firestore"
@@ -32,7 +32,7 @@ function Camera() {
       console.log(imageRef.current)
       createImage();
     },
-    [webcamRef])
+    [imageRef, createImage],)
 
   function capture() {
     imageRef.current  = webcamRef.current.getScreenshot()
