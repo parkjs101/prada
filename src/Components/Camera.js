@@ -57,6 +57,10 @@ function Camera() {
     setIsStarted(!isStarted)
   };
 
+  const onClosePopup = () => {
+    window.close();
+  };
+
   return (
     <div className={styles.main}>
       <Webcam
@@ -70,6 +74,7 @@ function Camera() {
       </Webcam>
       <div className={styles.timer}>{isStarted && <Count confirm={useConfirm}/>}</div>
       <button onClick={useStart}>Capture photo</button>
+      <button onClick={onClosePopup}>Close</button>
     </div>
   );
   
